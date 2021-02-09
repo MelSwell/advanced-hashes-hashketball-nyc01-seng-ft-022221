@@ -94,7 +94,7 @@ def game_hash
           player_name: "DeSagna Diop",
           number: 2,
           shoe: 14,
-          points: 55524,
+          points: 24,
           rebounds: 12,
           assists: 12,
           steals: 4,
