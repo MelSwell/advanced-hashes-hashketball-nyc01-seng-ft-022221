@@ -135,6 +135,7 @@ def num_points_scored(player_name)
       players_array.each do |player_details|
         if player_details[:player_name] == player_name
           answer = player_details[:points]
+        end
       end
   end
   answer
