@@ -203,11 +203,19 @@ def winning_team
   away_team_points = []
   game_hash.each do |location, team_details|
     if location == :home
-    players_array = team_details[:players]
-    players_array.each do |player_details|
-      
+      players_array = team_details[:players]
+      players_array.each do |player_details|
+        home_team_points << player_details[:points]
+      end
+    end
+    if location == :away
+      players_array = team_details[:players]
+      players_array.each do |player_details|
+        away_team_points << player_details[:points]
+      end
     end
   end
+  binding.pry
 end
 
 
