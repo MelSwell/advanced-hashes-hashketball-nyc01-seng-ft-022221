@@ -216,13 +216,12 @@ def winning_team
       players_array.each do |player_details|
         away_team_points << player_details[:points]
         away_team_total = away_team_points.reduce(0) {|sum, n| sum + n }
-        
-      end
+        end
     end
   end
-binding.pry
+  home_team_total > away_team_total ? game_hash[:home][:team_name] : game_hash[:away][:team_name]
 end
 
-winning_team
+puts winning_team
 
 
