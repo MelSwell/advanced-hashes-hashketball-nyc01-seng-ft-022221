@@ -128,8 +128,11 @@ end
 
 def find_player(player_name)
   game_hash.each do |key|
-    target_player = game_hash[key][:players].find
+    target_player = game_hash[key][:players][:player_name].find do |name|
+      name == player_name
+    end
   end
+  target_player
 end
 
 def num_points_scored(player)
