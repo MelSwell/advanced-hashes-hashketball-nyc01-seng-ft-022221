@@ -1,4 +1,6 @@
 # Write your code below game_hash
+require 'pry'
+
 def game_hash
   {
     home: {
@@ -130,5 +132,6 @@ def num_points_scored(player)
   players = game_hash.map do |key|
     game_hash[key][:players]
   end
+  binding.pry
   players
 end
