@@ -170,4 +170,11 @@ def team_names
   team_names
 end
 
+def player_numbers(team_name)
+  team_details = get_team_details(team_name)
+    team_details.each do |k, v|
+      binding.pry
+    end
+end
+
 
