@@ -146,4 +146,9 @@ def num_points_scored(player_name)
   answer
 end
 
-
+def shoe_size(player_name)
+  answer = nil
+  player_details = get_player_details(player_name)
+    answer = player_details[:shoe]
+  answer  
+end
