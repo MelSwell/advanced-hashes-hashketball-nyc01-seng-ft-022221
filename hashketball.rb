@@ -130,8 +130,9 @@ end
 
 def num_points_scored(player)
   players = game_hash.map do |key|
-    game_hash[key][:players]
     binding.pry
+    game_hash[key][:players]
+    
   end
   players
 end
