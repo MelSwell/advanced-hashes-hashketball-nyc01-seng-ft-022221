@@ -139,13 +139,23 @@ def get_player_details(player_name)
   end
 end
 
+def get_team_details(team_name)
+  game_hash.each do |location, team_details|
+    if team_details[:team_name] == team_name
+      return team_details
+    end
+end
+
 def num_points_scored(player_name)
   player_details = get_player_details(player_name)
-      binding.pry
      player_details[:points]
 end
 
 def shoe_size(player_name)
   player_details = get_player_details(player_name)
      player_details[:shoe]
+end
+
+def team_colors(team_name)
+  get_team_details
 end
