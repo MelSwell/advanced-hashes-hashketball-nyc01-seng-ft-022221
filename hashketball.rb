@@ -129,7 +129,10 @@ def game_hash
 end
 
 def num_points_scored(player_name)
+  answer = nil
   game_hash.each do |location, team_details|
     players_array = team_details[:players]
+    binding.pry
   end
+  answer
 end
