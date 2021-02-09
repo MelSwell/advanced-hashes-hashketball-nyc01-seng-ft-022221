@@ -126,6 +126,12 @@ def game_hash
   }
 end
 
+def find_player(player_name)
+  game_hash.each do |key|
+    target_player = game_hash[key][:players].find
+  end
+end
+
 def num_points_scored(player)
   
 end
