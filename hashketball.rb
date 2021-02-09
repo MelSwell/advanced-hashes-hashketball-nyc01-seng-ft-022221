@@ -201,6 +201,8 @@ end
 def winning_team
   home_team_points = []
   away_team_points = []
+  home_team_total = 0
+  away_team_total = 0
   game_hash.each do |location, team_details|
     if location == :home
       players_array = team_details[:players]
