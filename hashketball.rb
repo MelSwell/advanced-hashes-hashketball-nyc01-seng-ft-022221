@@ -173,7 +173,7 @@ end
 def player_numbers(team_name)
   numbers = []
   team_details = get_team_details(team_name)
-    team_details.each do |player, player_details|
+    team_details[:players].each do |detail, value|
       binding.pry
     end
 end
