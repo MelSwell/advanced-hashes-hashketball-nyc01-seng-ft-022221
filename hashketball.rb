@@ -144,6 +144,7 @@ def get_team_details(team_name)
     if team_details[:team_name] == team_name
       return team_details
     end
+  end
 end
 
 def num_points_scored(player_name)
