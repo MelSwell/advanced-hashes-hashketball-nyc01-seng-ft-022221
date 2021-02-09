@@ -128,3 +128,10 @@ def game_hash
   }
 end
 
+def find_player_index(player_name)
+  game_hash.each do |key|
+    index = game_hash[key][:players].index(player_name)
+  end
+end
+
+find_player_index("Ben Gordon")
