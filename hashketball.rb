@@ -206,6 +206,7 @@ def winning_team
       players_array = team_details[:players]
       players_array.each do |player_details|
         home_team_points << player_details[:points]
+        home_team_points.reduce(0) {| }
       end
     end
     if location == :away
