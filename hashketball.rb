@@ -214,9 +214,8 @@ def winning_team
         away_team_points << player_details[:points]
       end
     end
-    binding.pry
   end
-  
+  binding.pry
 end
 
 winning_team
