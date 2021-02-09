@@ -141,16 +141,8 @@ end
 
 def num_points_scored(player_name)
   answer = nil
-  game_hash.each do |location, team_details|
-    players_array = team_details[:players]
-      
-      players_array.each do |player_details|
-        if player_details[:player_name] == player_name
-          answer = player_details[:points]
-        end
-      end
-  
-  end
+  player_details = get_player_details(player_name)
+    answer = player_details[:points]
   answer
 end
 
