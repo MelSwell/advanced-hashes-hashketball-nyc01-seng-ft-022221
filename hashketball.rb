@@ -198,4 +198,16 @@ def big_shoe_rebounds
   rebounds
 end
 
+def winning_team
+  home_team_points = []
+  away_team_points = []
+  game_hash.each do |location, team_details|
+    if location == :home
+    players_array = team_details[:players]
+    players_array.each do |player_details|
+      
+    end
+  end
+end
+
 
