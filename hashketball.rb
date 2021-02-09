@@ -127,5 +127,8 @@ def game_hash
 end
 
 def num_points_scored(player)
-  game_hash
+  players = game_hash.map do |key|
+    game_hash[key][:players]
+  end
+  players
 end
